@@ -1,6 +1,10 @@
 import streamlit as st
 import joblib
 import pandas as pd
+import os
+
+print(f"File tồn tại: {os.path.exists('shoe_price_model.pkl')}")
+print(f"Quyền truy cập file: {os.access('shoe_price_model.pkl', os.R_OK)}")
 
 # Load model & encoder
 model = joblib.load("shoe_price_model.pkl")
