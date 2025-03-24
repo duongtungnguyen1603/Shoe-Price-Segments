@@ -3,9 +3,9 @@ import joblib
 import pandas as pd
 
 # Load model & encoder
-model = joblib.load("E:/Du_an_ca_nhan/shoe_price_model.pkl")
-label_encoder = joblib.load("E:/Du_an_ca_nhan/brand_encoder.pkl")
-most_common_brand = joblib.load("E:/Du_an_ca_nhan/most_common_brand.pkl")  # Load giá trị mode
+model = joblib.load("shoe_price_model.pkl")
+label_encoder = joblib.load("brand_encoder.pkl")
+most_common_brand = joblib.load("most_common_brand.pkl")  # Load giá trị mode
 
 # Giao diện web
 st.title("Dự đoán phân khúc giá giày")
